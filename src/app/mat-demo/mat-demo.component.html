@@ -1,0 +1,54 @@
+<p>mat-demo works!</p>
+<div mat-dialog-content>
+<div class="companyName">
+    <mat-form-field>
+        <input matInput placeholder="Enter Company Name" name="companyName" [(ngModel)]="compModel.companyName">
+    </mat-form-field>
+ </div>
+<div class="companyCeo">
+    <mat-form-field>
+        <input matInput placeholder="Enter Company CEO Name" name="companyCeo" [(ngModel)]="compModel.companyCeo">
+    </mat-form-field>
+</div>
+
+
+<div class="companyTurnover">
+    <mat-form-field>
+        <input matInput placeholder="Enter Company Turnover" name="companyTurnover" [(ngModel)]="compModel.companyTurnover">
+    </mat-form-field>
+</div>
+
+<div class="companyWebsite">
+    <mat-form-field>
+        <input matInput placeholder="Enter Company Website" name="companyWebsite" [(ngModel)]="compModel.companyWebsite">
+    </mat-form-field>
+</div>
+
+<div class="stockExchange">
+    <mat-form-field>
+        <input matInput placeholder="Enter Company StockExchange" name="stockExchange" [(ngModel)]="compModel. stockExchange">
+    </mat-form-field>
+</div>
+<!-- <div class=" stockPrice">
+    <mat-form-field>
+        <input matInput placeholder="Enter Company  stockPrice" name=" stockPrice" [(ngModel)]="compModel. stockPrice">
+    </mat-form-field>
+</div> -->
+</div>
+
+<mat-action-row>
+    <div class="conatiner-fluid padding">
+        <div class="row">
+            <div class="col-md-2" style="margin-left: 60px">
+                <button mat-raised-button color="primary" (click)="addCompanyDetails()">Registercompany</button>
+            </div>
+        </div>
+    </div>
+</mat-action-row>
+
+
+
+<div mat-dialog-actions>
+
+<button mat-button color="primary" [mat-dialog-close]="" cdkFocusInitial>close</button>
+</div>  
